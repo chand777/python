@@ -1,0 +1,1948 @@
+Microsoft Windows [Version 10.0.19041.804]
+(c) 2020 Microsoft Corporation. All rights reserved.
+
+C:\Users\chanroy>cd Desktop
+
+C:\Users\chanroy\Desktop>cd python
+
+C:\Users\chanroy\Desktop\python>cd oops
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+  File "multiinheri.py", line 12
+    return f "Yes I dance {self.dance) no. of times"
+             ^
+SyntaxError: invalid syntax
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+  File "multiinheri.py", line 12
+    return f "Yes I dance {self.dance} no. of times"
+             ^
+SyntaxError: invalid syntax
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+  File "multiinheri.py", line 18
+    return f " I'm awesome dancer and I dand {self.dance) no. of times"
+             ^
+SyntaxError: invalid syntax
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+  File "multiinheri.py", line 18
+    return f " I'm awesome dancer and I dand {self.dance} no. of times"
+             ^
+SyntaxError: invalid syntax
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+Traceback (most recent call last):
+  File "multiinheri.py", line 14, in <module>
+    class Grandson(son):
+NameError: name 'son' is not defined
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+ I'm awesome dancer and I dand 6 no. of times
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+ This is Test
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+This is Test
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+Yes I dance 6 no. of times
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+Traceback (most recent call last):
+  File "multiinheri.py", line 28, in <module>
+    print(basketball)
+NameError: name 'basketball' is not defined
+
+C:\Users\chanroy\Desktop\python\oops>python multiinheri.py
+1
+
+C:\Users\chanroy\Desktop\python\oops>pip install pyttsx3
+Collecting pyttsx3
+  Downloading pyttsx3-2.90-py3-none-any.whl (39 kB)
+Collecting pywin32
+  Downloading pywin32-300-cp38-cp38-win32.whl (8.5 MB)
+     |████████████████████████████████| 8.5 MB 131 kB/s
+Collecting comtypes
+  Downloading comtypes-1.1.8.zip (181 kB)
+     |████████████████████████████████| 181 kB 136 kB/s
+Collecting pypiwin32
+  Downloading pypiwin32-223-py3-none-any.whl (1.7 kB)
+Using legacy 'setup.py install' for comtypes, since package 'wheel' is not installed.
+Installing collected packages: pywin32, pypiwin32, comtypes, pyttsx3
+    Running setup.py install for comtypes ... done
+Successfully installed comtypes-1.1.8 pypiwin32-223 pyttsx3-2.90 pywin32-300
+
+C:\Users\chanroy\Desktop\python\oops>cd ../project
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+  File "project1.py", line 3
+    import = pyttsx3
+           ^
+SyntaxError: invalid syntax
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+  File "project1.py", line 13
+    def speak(auido)
+                   ^
+SyntaxError: invalid syntax
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyttsx3\__init__.py", line 20, in init
+    eng = _activeEngines[driverName]
+  File "C:\Program Files (x86)\Python38-32\lib\weakref.py", line 131, in __getitem__
+    o = self.data[key]()
+KeyError: 'sapi5'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyttsx3\drivers\sapi5.py", line 3, in <module>
+    from comtypes.gen import SpeechLib  # comtypes
+ImportError: cannot import name 'SpeechLib' from 'comtypes.gen' (C:\Program Files (x86)\Python38-32\lib\site-packages\comtypes\gen\__init__.py)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\ctypes\__init__.py", line 123, in WINFUNCTYPE
+    return _win_functype_cache[(restype, argtypes, flags)]
+KeyError: (<class 'ctypes.HRESULT'>, (<class 'ctypes.c_long'>, <class 'comtypes.automation.tagVARIANT'>, <class 'comtypes.automation.tagVARIANT'>, <class 'ctypes.c_long'>, <class 'ctypes.c_long'>), 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "project1.py", line 4, in <module>
+    engine = pyttsx3.init('sapi5') #Mircrosoft speeach API to take voice
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyttsx3\__init__.py", line 22, in init
+    eng = Engine(driverName, debug)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyttsx3\engine.py", line 30, in __init__
+    self.proxy = driver.DriverProxy(weakref.proxy(self), driverName, debug)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyttsx3\driver.py", line 50, in __init__
+    self._module = importlib.import_module(name)
+  File "C:\Program Files (x86)\Python38-32\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyttsx3\drivers\sapi5.py", line 6, in <module>
+    engine = comtypes.client.CreateObject("SAPI.SpVoice")
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\comtypes\client\__init__.py", line 250, in CreateObject
+    return _manage(obj, clsid, interface=interface)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\comtypes\client\__init__.py", line 188, in _manage
+    obj = GetBestInterface(obj)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\comtypes\client\__init__.py", line 110, in GetBestInterface
+    mod = GetModule(tlib)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\comtypes\client\_generate.py", line 118, in GetModule
+    mod = _CreateWrapper(tlib, pathname)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\comtypes\client\_generate.py", line 198, in _CreateWrapper
+    mod = _my_import(fullname)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\comtypes\client\_generate.py", line 19, in _my_import
+    return __import__(fullname, globals(), locals(), ['DUMMY'])
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\comtypes\gen\_C866CA3A_32F7_11D2_9602_00C04F8EE628_0_5_4.py", line 274, in <module>
+    ISpeechRecoGrammar._methods_ = [
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\comtypes\__init__.py", line 323, in __setattr__
+    self._make_methods(value)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\comtypes\__init__.py", line 692, in _make_methods
+    prototype = WINFUNCTYPE(restype, *argtypes)
+  File "C:\Program Files (x86)\Python38-32\lib\ctypes\__init__.py", line 125, in WINFUNCTYPE
+    class WinFunctionType(_CFuncPtr):
+TypeError: item 2 in _argtypes_ passes a union by value, which is unsupported.
+
+C:\Users\chanroy\Desktop\python\Project>pip install -Iv pyttsx3==2.6 -U
+Using pip 21.0.1 from c:\program files (x86)\python38-32\lib\site-packages\pip (python 3.8)
+Non-user install because site-packages writeable
+Created temporary directory: C:\Users\chanroy\AppData\Local\Temp\pip-ephem-wheel-cache-jqns0gzm
+Created temporary directory: C:\Users\chanroy\AppData\Local\Temp\pip-req-tracker-d02srpvk
+Initialized build tracking at C:\Users\chanroy\AppData\Local\Temp\pip-req-tracker-d02srpvk
+Created build tracker: C:\Users\chanroy\AppData\Local\Temp\pip-req-tracker-d02srpvk
+Entered build tracker: C:\Users\chanroy\AppData\Local\Temp\pip-req-tracker-d02srpvk
+Created temporary directory: C:\Users\chanroy\AppData\Local\Temp\pip-install-vezpbsme
+1 location(s) to search for versions of pyttsx3:
+* https://pypi.org/simple/pyttsx3/
+Fetching project page and analyzing links: https://pypi.org/simple/pyttsx3/
+Getting page https://pypi.org/simple/pyttsx3/
+Found index url https://pypi.org/simple
+Looking up "https://pypi.org/simple/pyttsx3/" in the cache
+Request header has "max_age" as 0, cache bypassed
+Starting new HTTPS connection (1): pypi.org:443
+https://pypi.org:443 "GET /simple/pyttsx3/ HTTP/1.1" 304 0
+  Found link https://files.pythonhosted.org/packages/5b/4c/7a6cb1f3b34670215fc2a8e647056d33464ea8e481b433e8596d8eef5120/pyttsx3-1.14.zip#sha256=28ff8d0a4b5a7f00d5091fa83e0cba8b78931f1c80c2c60b5f6c8b88e72c131e (from https://pypi.org/simple/pyttsx3/), version: 1.14
+  Found link https://files.pythonhosted.org/packages/0a/fc/aeb65c7b6fdca7c16289ca094fa754a8870b56cccc27ad01bcabf7911625/pyttsx3-1.15.zip#sha256=c3b53417b625eabf45a923a1cd2f4467478acceba3a27398755c94b040cdba4a (from https://pypi.org/simple/pyttsx3/), version: 1.15
+  Found link https://files.pythonhosted.org/packages/30/0d/f38ea058f66a7f1ee0cb2488dc72b1ea5524c60afbd2db0a57c64c648a62/pyttsx3-2.5.zip#sha256=86f29c08a3e9871925f39d3ce46aaf3359abaadd3d87a2690d87936f1b93d4db (from https://pypi.org/simple/pyttsx3/), version: 2.5
+  Found link https://files.pythonhosted.org/packages/6a/d8/9277091f4bb6b0fce243266fb544913b1d498b0acca38c823e2984e0fee1/pyttsx3-2.6.zip#sha256=c532e5e2c2d14165c3f3bf117f3dbd1ca4c617e05d5392caf4edf5097d3ce0f8 (from https://pypi.org/simple/pyttsx3/), version: 2.6
+  Found link https://files.pythonhosted.org/packages/12/b4/75d792acf44c01200690030f185e246244ebdfc12db84690e5c1c4df2864/pyttsx3-2.7-py3-none-any.whl#sha256=03fd07429b21e99ba2d738d25d12328483fae9cb86de7ea9ac5a2617031d7261 (from https://pypi.org/simple/pyttsx3/), version: 2.7
+  Found link https://files.pythonhosted.org/packages/24/4e/580726c73272344d3e74b7aaffae55ff6b6450061fbecb8cc6e112531c02/pyttsx3-2.7.tar.gz#sha256=c3d67b54f10252b4254869c85280f48d7b914304fb726d0b41b170f2da3bf0f6 (from https://pypi.org/simple/pyttsx3/), version: 2.7
+  Found link https://files.pythonhosted.org/packages/7c/6e/691088c03db2f9e062994fce9f310f85bf1932d2a0296b11676b927783eb/pyttsx3-2.8-py3-none-any.whl#sha256=a35e0d0ebbb02e366fa3a2f461ff6bf52e0c8a4531389be4fe9434cdbdf3727e (from https://pypi.org/simple/pyttsx3/), version: 2.8
+  Found link https://files.pythonhosted.org/packages/35/13/11ca6cc12a957f75555e9681d3a25978714d2e6a576367c2d00cf243e192/pyttsx3-2.9-py3-none-any.whl#sha256=2e8f824060c05e890c093d8022e426e424c95f002e94a3bcab45027456259649 (from https://pypi.org/simple/pyttsx3/), version: 2.9
+  Found link https://files.pythonhosted.org/packages/2f/ca/019a5d782f355bc2040ac45bd9612995652934dc16e48873d3fb2e367547/pyttsx3-2.71-py3-none-any.whl#sha256=e630a37fd7d117ddfd67d2038c8dc8553904832cf2e54b0b7e39dbe571ad0941 (from https://pypi.org/simple/pyttsx3/), version: 2.71
+  Found link https://files.pythonhosted.org/packages/00/c2/a83636e6ab1db54918cc650b30a409c44d66ebdd6440054674fb948a5b06/pyttsx3-2.80-py3-none-any.whl#sha256=1743655a875926f8361298a400aeaa6aac9bdf4399d0a0711837f99fec8822b8 (from https://pypi.org/simple/pyttsx3/), version: 2.80
+  Found link https://files.pythonhosted.org/packages/b7/c3/7317dafc544a4de539f729dd494410f7e095fb72db85ef16269f5e7403f7/pyttsx3-2.81-py3-none-any.whl#sha256=f127e5f284dee53b0af1e8333fa0b874635ceff145db2dbf6ddd4d8ebbc73a3f (from https://pypi.org/simple/pyttsx3/), version: 2.81
+  Found link https://files.pythonhosted.org/packages/38/2a/98347a2906952245fbcf825d89cd22bd0b3604a8e8e99a9f0107e4e9cb62/pyttsx3-2.83-py3-none-any.whl#sha256=3d43d7cc8ca8e558ae0da91e96684866c64dc83365b62e4f515ff5492dc74eb1 (from https://pypi.org/simple/pyttsx3/), version: 2.83
+  Found link https://files.pythonhosted.org/packages/f4/20/f6c582c5f2735ca5c55ae52f1ddbc7447fb3565b5ac2fdc24a8d534f4aa1/pyttsx3-2.84-py3-none-any.whl#sha256=783959368938fc6ad5f9c3f5663a8f1f3249f945251035fcf4ea0c61e75c8217 (from https://pypi.org/simple/pyttsx3/), version: 2.84
+  Found link https://files.pythonhosted.org/packages/e4/53/f2f33e68c25b5944db5c4390d03ac8b12747b9b9bf7ba154bdcc7745e57d/pyttsx3-2.86-py3-none-any.whl#sha256=da0138278437d8cc1521e17d75e2b6e339f2c6b55507355056e118462e0cc152 (from https://pypi.org/simple/pyttsx3/), version: 2.86
+  Found link https://files.pythonhosted.org/packages/fd/4b/4981cc11f1a288fa44fb906e07786eaa081b1b42da3f6dce38fe16af0d99/pyttsx3-2.87-py3-none-any.whl#sha256=57d0afb468e4da590d8d1b41fbf9985c84b85aa8a083c7e569ebe24513fd0024 (from https://pypi.org/simple/pyttsx3/), version: 2.87
+  Found link https://files.pythonhosted.org/packages/bb/1d/cd20dac738d0b0e94d758ee8075e724eae871eca466642c87b4109eef490/pyttsx3-2.88-py3-none-any.whl#sha256=3b133c0c723affb8dbe2b40ee914481a9a547aac1b50ccb9122366ab3467e606 (from https://pypi.org/simple/pyttsx3/), version: 2.88
+  Found link https://files.pythonhosted.org/packages/33/9a/de4781245f5ad966646fd276259ef7cfd400ba3cf7d5db7c0d5aab310c20/pyttsx3-2.90-py3-none-any.whl#sha256=a585b6d8cffc19bd92db1e0ccbd8aa9c6528dd2baa5a47045d6fed542a44aa19 (from https://pypi.org/simple/pyttsx3/), version: 2.90
+Given no hashes to check 1 links for project 'pyttsx3': discarding no candidates
+Collecting pyttsx3==2.6
+  Created temporary directory: C:\Users\chanroy\AppData\Local\Temp\pip-unpack-z61j9vhd
+  Looking up "https://files.pythonhosted.org/packages/6a/d8/9277091f4bb6b0fce243266fb544913b1d498b0acca38c823e2984e0fee1/pyttsx3-2.6.zip" in the cache
+  No cache entry available
+  Starting new HTTPS connection (1): files.pythonhosted.org:443
+  https://files.pythonhosted.org:443 "GET /packages/6a/d8/9277091f4bb6b0fce243266fb544913b1d498b0acca38c823e2984e0fee1/pyttsx3-2.6.zip HTTP/1.1" 200 31027
+  Downloading pyttsx3-2.6.zip (31 kB)
+  Ignoring unknown cache-control directive: immutable
+  Updating cache with response from "https://files.pythonhosted.org/packages/6a/d8/9277091f4bb6b0fce243266fb544913b1d498b0acca38c823e2984e0fee1/pyttsx3-2.6.zip"
+  Caching due to etag
+  Added pyttsx3==2.6 from https://files.pythonhosted.org/packages/6a/d8/9277091f4bb6b0fce243266fb544913b1d498b0acca38c823e2984e0fee1/pyttsx3-2.6.zip#sha256=c532e5e2c2d14165c3f3bf117f3dbd1ca4c617e05d5392caf4edf5097d3ce0f8 to build tracker 'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-req-tracker-d02srpvk'
+    Running setup.py (path:C:\Users\chanroy\AppData\Local\Temp\pip-install-vezpbsme\pyttsx3_eeec948be01f4e65b05c5cf31a977220\setup.py) egg_info for package pyttsx3
+    Created temporary directory: C:\Users\chanroy\AppData\Local\Temp\pip-pip-egg-info-w_1pyldy
+    Running command python setup.py egg_info
+    running egg_info
+    creating C:\Users\chanroy\AppData\Local\Temp\pip-pip-egg-info-w_1pyldy\pyttsx3.egg-info
+    writing C:\Users\chanroy\AppData\Local\Temp\pip-pip-egg-info-w_1pyldy\pyttsx3.egg-info\PKG-INFO
+    writing dependency_links to C:\Users\chanroy\AppData\Local\Temp\pip-pip-egg-info-w_1pyldy\pyttsx3.egg-info\dependency_links.txt
+    writing requirements to C:\Users\chanroy\AppData\Local\Temp\pip-pip-egg-info-w_1pyldy\pyttsx3.egg-info\requires.txt
+    writing top-level names to C:\Users\chanroy\AppData\Local\Temp\pip-pip-egg-info-w_1pyldy\pyttsx3.egg-info\top_level.txt
+    writing manifest file 'C:\Users\chanroy\AppData\Local\Temp\pip-pip-egg-info-w_1pyldy\pyttsx3.egg-info\SOURCES.txt'
+    reading manifest file 'C:\Users\chanroy\AppData\Local\Temp\pip-pip-egg-info-w_1pyldy\pyttsx3.egg-info\SOURCES.txt'
+    writing manifest file 'C:\Users\chanroy\AppData\Local\Temp\pip-pip-egg-info-w_1pyldy\pyttsx3.egg-info\SOURCES.txt'
+    c:\program files (x86)\python38-32\lib\distutils\dist.py:274: UserWarning: Unknown distribution option: 'summary'
+      warnings.warn(msg)
+  Source in c:\users\chanroy\appdata\local\temp\pip-install-vezpbsme\pyttsx3_eeec948be01f4e65b05c5cf31a977220 has version 2.6, which satisfies requirement pyttsx3==2.6 from https://files.pythonhosted.org/packages/6a/d8/9277091f4bb6b0fce243266fb544913b1d498b0acca38c823e2984e0fee1/pyttsx3-2.6.zip#sha256=c532e5e2c2d14165c3f3bf117f3dbd1ca4c617e05d5392caf4edf5097d3ce0f8
+  Removed pyttsx3==2.6 from https://files.pythonhosted.org/packages/6a/d8/9277091f4bb6b0fce243266fb544913b1d498b0acca38c823e2984e0fee1/pyttsx3-2.6.zip#sha256=c532e5e2c2d14165c3f3bf117f3dbd1ca4c617e05d5392caf4edf5097d3ce0f8 from build tracker 'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-req-tracker-d02srpvk'
+1 location(s) to search for versions of pypiwin32:
+* https://pypi.org/simple/pypiwin32/
+Fetching project page and analyzing links: https://pypi.org/simple/pypiwin32/
+Getting page https://pypi.org/simple/pypiwin32/
+Found index url https://pypi.org/simple
+Looking up "https://pypi.org/simple/pypiwin32/" in the cache
+Request header has "max_age" as 0, cache bypassed
+https://pypi.org:443 "GET /simple/pypiwin32/ HTTP/1.1" 304 0
+  Skipping link: none of the wheel's tags match: cp27-none-win32: https://files.pythonhosted.org/packages/cd/59/7cc2407b15bcd13d43933a5ae163de89b6f366dda8b2b7403453e61c3a05/pypiwin32-219-cp27-none-win32.whl#sha256=5618522ad9c2b229d8a9a1c5175d135a397bf70d6db1d352adf0131aa5321258 (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp27-none-win_amd64: https://files.pythonhosted.org/packages/a5/8d/739f12d811d19cd6686f97bb96b65b0e4c8ca428fb02581d872b912b14cf/pypiwin32-219-cp27-none-win_amd64.whl#sha256=fbe640e946e2fcd983048e2c40bee28eba884a9e0178fb1cf03e1d365abd8e3f (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp31-none-win32: https://files.pythonhosted.org/packages/6b/36/72dc839f0625bc7f6400472ed2ebe7902371111794f6bc37afaf1ec4510c/pypiwin32-219-cp31-none-win32.whl#sha256=ec4b285e1a58dc6eeaa331d5d278dbc6e9da3fa2675cbb803a9c88d2b9c43f79 (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp31-none-win_amd64: https://files.pythonhosted.org/packages/19/c4/ead5a52a26859d4808aada94c0f8160edd48571455f3b255c3f0f6304b82/pypiwin32-219-cp31-none-win_amd64.whl#sha256=794150d9e0c1fc61a9f5845d88028d24ffdf78253f03d7d623e0e1c103b5d92b (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp32-none-win32: https://files.pythonhosted.org/packages/70/e1/4a2e52d29cdf78852f9467aef568e30a90067ff82113a16fcbd1fa7c7fd9/pypiwin32-219-cp32-none-win32.whl#sha256=f226481dade2c075e7f488485b6e18a279367b94a019baf71493fab475f3a4b8 (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp32-none-win_amd64: https://files.pythonhosted.org/packages/6b/df/bf2c6e3ff559f7b8afbebd963b4c2a54d1112f6e074088374be235f6e9ff/pypiwin32-219-cp32-none-win_amd64.whl#sha256=f811d494040e91e38f01ef1e127177bbb9fdc350126a11cd65ac5db6cad2b92e (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp33-none-win32: https://files.pythonhosted.org/packages/68/29/a32319f23068e1bfd8580be7a76f6a77957c22fef2437db1031f9b866b19/pypiwin32-219-cp33-none-win32.whl#sha256=44217c51c54b1dd0de31bdad270d5e18dab0c8fa8c121ddf63fa86fa5991787f (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp33-none-win_amd64: https://files.pythonhosted.org/packages/59/1a/7104fc341599ae8b73995ab6b8bedeaed6b81f714c92a703f87131053a24/pypiwin32-219-cp33-none-win_amd64.whl#sha256=34fd396098d5b29b2a1ae71db5ca9ba91e1c6c5b7fb7fbff1296e0d45f0b103f (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp34-none-win32: https://files.pythonhosted.org/packages/68/76/c3457dfe31c5a6c4fc3687d012a89c769d52129f19584415309aa0339a31/pypiwin32-219-cp34-none-win32.whl#sha256=5e64895aed07c7124b57ff21e48ee0ca4caa9d1f85042b1e7c35eecd0e2f01be (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp34-none-win_amd64: https://files.pythonhosted.org/packages/8f/da/36439654abd8f39bcad0664c68674a41b838ca902da440defde17abbeade/pypiwin32-219-cp34-none-win_amd64.whl#sha256=74ac5855269b3d67458815a709f083e74961fd5d558a4b9e1307eaa6c832d827 (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp35-none-win32: https://files.pythonhosted.org/packages/5b/68/436ce631dc0584969d03186d095f4daf09b5c0193ebd66927524a33411c8/pypiwin32-219-cp35-none-win32.whl#sha256=ca375fdf0adb961d1988786aa2bcb54aac23fd1a647b591ccf44e0965a6dc51f (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp35-none-win_amd64: https://files.pythonhosted.org/packages/fd/82/c8a224a9fed3af696463a7af196a891b7652445e914dc3b85f95d6417d4a/pypiwin32-219-cp35-none-win_amd64.whl#sha256=0b8f74a48021d71c8645d4a9de5426dcd800976a96d9a3bfb90136b24b9318a6 (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: unsupported archive format: .exe: https://files.pythonhosted.org/packages/79/da/1c6a0e2c258fa80a2754dc449fbe121800de8d9801e48e1e7dbeaed54c96/pypiwin32-219.win-amd64-py2.7.exe#sha256=69f63942403f5a6262f05602106ef4921db582df83c59b1a3571995652a6c762 (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: unsupported archive format: .exe: https://files.pythonhosted.org/packages/91/87/2ed2b036a2dd9037074ba5862ff959e9541b9625f3ae8c90b8bacd38589b/pypiwin32-219.win32-py2.7.exe#sha256=5e0101cb712a3b90ee1ccdf8b90ae48958c78e8f1584e958db85bb1a403a91d2 (from https://pypi.org/simple/pypiwin32/)
+  Found link https://files.pythonhosted.org/packages/2b/ca/5c086c18de8f70222787b3e824e755b68d99272531522e77bb381d4f60c8/pypiwin32-219.zip#sha256=06d478295c89dbdd4187e1ac099bb8eab93c29e298bded4e2fbc77009287fa44 (from https://pypi.org/simple/pypiwin32/), version: 219
+  Skipping link: none of the wheel's tags match: cp36-none-win32: https://files.pythonhosted.org/packages/bb/5b/2f6207cab31f707fc4a8d33e3d6b14daa8750ecabf658127e31d16cdd06b/pypiwin32-220-cp36-none-win32.whl#sha256=ceacd1b853fd9f521808d52554a1dcf1231d63c0e7409898ca6502e73e447b6b (from https://pypi.org/simple/pypiwin32/)
+  Skipping link: none of the wheel's tags match: cp36-none-win_amd64: https://files.pythonhosted.org/packages/d0/f7/56e35902d32299020cf9136264ca102ff0b03c0555621b469c825bc10d08/pypiwin32-220-cp36-none-win_amd64.whl#sha256=0cece5cf12ae7f4b32764db8a12cdb1a8b27184be681e0cfbd2996f0cc07376f (from https://pypi.org/simple/pypiwin32/)
+  Found link https://files.pythonhosted.org/packages/d0/1b/2f292bbd742e369a100c91faa0483172cd91a1a422a6692055ac920946c5/pypiwin32-223-py3-none-any.whl#sha256=67adf399debc1d5d14dffc1ab5acacb800da569754fafdc576b2a039485aa775 (from https://pypi.org/simple/pypiwin32/), version: 223
+  Found link https://files.pythonhosted.org/packages/13/e8/4f38eb30c4dae36634a53c5b2cd73b517ea3607e10d00f61f2494449cec0/pypiwin32-223.tar.gz#sha256=71be40c1fbd28594214ecaecb58e7aa8b708eabfa0125c8a109ebd51edbd776a (from https://pypi.org/simple/pypiwin32/), version: 223
+Given no hashes to check 3 links for project 'pypiwin32': discarding no candidates
+Collecting pypiwin32
+  Created temporary directory: C:\Users\chanroy\AppData\Local\Temp\pip-unpack-d0r7mh_3
+  Looking up "https://files.pythonhosted.org/packages/d0/1b/2f292bbd742e369a100c91faa0483172cd91a1a422a6692055ac920946c5/pypiwin32-223-py3-none-any.whl" in the cache
+  Current age based on date: 1086
+  Ignoring unknown cache-control directive: immutable
+  Freshness lifetime from max-age: 365000000
+  The response is "fresh", returning cached response
+  365000000 > 1086
+  Using cached pypiwin32-223-py3-none-any.whl (1.7 kB)
+  Added pypiwin32 from https://files.pythonhosted.org/packages/d0/1b/2f292bbd742e369a100c91faa0483172cd91a1a422a6692055ac920946c5/pypiwin32-223-py3-none-any.whl#sha256=67adf399debc1d5d14dffc1ab5acacb800da569754fafdc576b2a039485aa775 (from pyttsx3==2.6) to build tracker 'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-req-tracker-d02srpvk'
+  Removed pypiwin32 from https://files.pythonhosted.org/packages/d0/1b/2f292bbd742e369a100c91faa0483172cd91a1a422a6692055ac920946c5/pypiwin32-223-py3-none-any.whl#sha256=67adf399debc1d5d14dffc1ab5acacb800da569754fafdc576b2a039485aa775 (from pyttsx3==2.6) from build tracker 'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-req-tracker-d02srpvk'
+1 location(s) to search for versions of pywin32:
+* https://pypi.org/simple/pywin32/
+Fetching project page and analyzing links: https://pypi.org/simple/pywin32/
+Getting page https://pypi.org/simple/pywin32/
+Found index url https://pypi.org/simple
+Looking up "https://pypi.org/simple/pywin32/" in the cache
+Request header has "max_age" as 0, cache bypassed
+https://pypi.org:443 "GET /simple/pywin32/ HTTP/1.1" 304 0
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win32: https://files.pythonhosted.org/packages/36/98/581719389bef3491e982b0550ab539c25e8b2d1e9fd0695f4a05c696f061/pywin32-222-cp27-cp27m-win32.whl#sha256=7181f6aa0730caf888be592cf612cddb8987409fa4acf7393913c558da9b28d5 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win_amd64: https://files.pythonhosted.org/packages/96/4b/b52fb6f3b1648a52a3dfc422dace461a237d23ac55dfc0375b6263e86bd9/pywin32-222-cp27-cp27m-win_amd64.whl#sha256=d8a9ac7806e86b6c28be957407b50ca02144c7c0639fb125f8bd98e968ed642f (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win32: https://files.pythonhosted.org/packages/ed/7b/2b4ed81d83cb98721a7d1bd01a1899351a99260fe97cc51d5118ac9998f7/pywin32-222-cp35-cp35m-win32.whl#sha256=9d7e73262ca8bb8b34e7e17a29d3693e1b4b701389847bc70463adbb58b8245b (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win_amd64: https://files.pythonhosted.org/packages/20/6d/ba9413b676959e49ffa990abb0f3dc4db57d2d23271859f3f76e59796e3e/pywin32-222-cp35-cp35m-win_amd64.whl#sha256=33971ade23c830f7660ad25ebf7c7625f8cd7efb635c880238bd2c5c23ee6ae8 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win32: https://files.pythonhosted.org/packages/23/e3/e65b4d14c89f68bb85c24d733bcdb0b684af34970bdbb1b0892985965ce9/pywin32-222-cp36-cp36m-win32.whl#sha256=bace4824aa0242d1f3d9fd98f2116e0e1e9c8e0705ca135e5ce72960210b0c01 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win_amd64: https://files.pythonhosted.org/packages/be/25/0e0c568456b77ce144dd2b8799f915b046ffa1cd922771d214e4be05bca2/pywin32-222-cp36-cp36m-win_amd64.whl#sha256=4e27d2c9a97b0e8d538155b8804929780df9a6b3ebc31e845d16b7efa2142161 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win32: https://files.pythonhosted.org/packages/91/67/59bb7d0d7623b879ce871ff82fb05da9efa63e907e1ba2e253c4cea6dcfc/pywin32-222-cp37-cp37m-win32.whl#sha256=356de1e08453e668cfe8fa892b17b46600b94373373c6b2b743730fc1d965a1c (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win32: https://files.pythonhosted.org/packages/a0/76/89b836562a36929bb913f9c17fca54fdd2c68b5e97ec0d626a389c087150/pywin32-223-cp27-cp27m-win32.whl#sha256=42f48567e36b787901ff3da20de5a134cd9880cc90832e2aad60951f058699f0 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win_amd64: https://files.pythonhosted.org/packages/65/83/0b14690d70bcd193a67c8b0a640129717e37a11d8e6a3e28a01e47910737/pywin32-223-cp27-cp27m-win_amd64.whl#sha256=f0f0e7c82ee334dd6e888b9b5beb05fd8947355fa7a15644c810bb4ea0079ca6 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win32: https://files.pythonhosted.org/packages/32/0f/16419ffd63c60b0c197614c430eab35360a94154ac1b846b3ee69f8c8061/pywin32-223-cp35-cp35m-win32.whl#sha256=c7ea0deabcc324e5b74084b5452003109c592d1aedbe9e9289ed55b26d9b0c7f (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win_amd64: https://files.pythonhosted.org/packages/73/48/42e18ab94651c28d21f626ce1b5feaf60e5fb2aae3d264138aa768532a5f/pywin32-223-cp35-cp35m-win_amd64.whl#sha256=da422d4067d98b49fbb19d851900a5fc38c61eab0ee803574c27c42309173ebe (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win32: https://files.pythonhosted.org/packages/d4/2d/b927e61c4a2b0aaaab72c8cb97cf748c319c399d804293164b0c43380d5f/pywin32-223-cp36-cp36m-win32.whl#sha256=fb3c85907918fd01a72ee146d323d220771dee151c0cfa5630c2f35797ffb116 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win_amd64: https://files.pythonhosted.org/packages/9f/9d/f4b2170e8ff5d825cd4398856fee88f6c70c60bce0aa8411ed17c1e1b21f/pywin32-223-cp36-cp36m-win_amd64.whl#sha256=0df9b008caef10af0d674c483316c28dcf78391332d9d5d380fab667ebf2d7d1 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win32: https://files.pythonhosted.org/packages/d6/39/5c318e0b61d892861fe65a6a3150d42be4d87ae9137be2ef3e35632341c2/pywin32-223-cp37-cp37m-win32.whl#sha256=9eff897796c9d76a213134257a01b6f8a122c55e0772847fba313a8091f3ec44 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win_amd64: https://files.pythonhosted.org/packages/f4/fb/ba9e519d90b63090005bcdee900d318d895d475c627dc1bc0f77b27abad0/pywin32-223-cp37-cp37m-win_amd64.whl#sha256=249391eb924b8376826e6f84d143d1dcc0e400b238b511d5fbd3811f6ed9ad50 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win32: https://files.pythonhosted.org/packages/fc/7c/25f36684ec3b8ea47d5601442950a4fa770d066f57171fbf8c905ccbfd25/pywin32-224-cp27-cp27m-win32.whl#sha256=6852ceac5fdd7a146b570655c37d9eacd520ed1eaeec051ff41c6fc94243d8bf (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win_amd64: https://files.pythonhosted.org/packages/83/cc/2e39fa39b804f7b6e768a37657d75eb14cd917d1f43f376dad9f7c366ccf/pywin32-224-cp27-cp27m-win_amd64.whl#sha256=6dbc4219fe45ece6a0cc6baafe0105604fdee551b5e876dc475d3955b77190ec (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win32: https://files.pythonhosted.org/packages/64/5a/342e5c4552ec4c6f505c363c485f26e3828e633c55ba4888134e4d561a31/pywin32-224-cp35-cp35m-win32.whl#sha256=9bd07746ce7f2198021a9fa187fa80df7b221ec5e4c234ab6f00ea355a3baf99 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win_amd64: https://files.pythonhosted.org/packages/83/a5/960c5a714b3c975102031286121db06fe861fdd221b493dce5144d759b90/pywin32-224-cp35-cp35m-win_amd64.whl#sha256=5f265d72588806e134c8e1ede8561739071626ea4cc25c12d526aa7b82416ae5 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win32: https://files.pythonhosted.org/packages/41/02/3d5014e3b70c950492ceb65785ef724d073785f02fd51401430fd5fef681/pywin32-224-cp36-cp36m-win32.whl#sha256=32b37abafbfeddb0fe718008d6aada5a71efa2874f068bee1f9e703983dcc49a (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win_amd64: https://files.pythonhosted.org/packages/b2/1a/7727b406391b0178b6ccb7e447e963df5ebf1ce9e0f615fc6ce23b6f6753/pywin32-224-cp36-cp36m-win_amd64.whl#sha256=35451edb44162d2f603b5b18bd427bc88fcbc74849eaa7a7e7cfe0f507e5c0c8 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win32: https://files.pythonhosted.org/packages/8a/37/917c4020e93e0e854d4cbff1cbdf14ec45a6d1cedf52f8cafdea5b22451a/pywin32-224-cp37-cp37m-win32.whl#sha256=22e218832a54ed206452c8f3ca9eff07ef327f8e597569a4c2828be5eaa09a77 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win_amd64: https://files.pythonhosted.org/packages/a3/8a/eada1e7990202cd27e58eca2a278c344fef190759bbdc8f8f0eb6abeca9c/pywin32-224-cp37-cp37m-win_amd64.whl#sha256=4eda2e1e50faa706ff8226195b84fbcbd542b08c842a9b15e303589f85bfb41c (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win32: https://files.pythonhosted.org/packages/b2/8c/39ec6f8129d65e78b787aa405d1dd13828c6fd7566875f16800ca8a0fc84/pywin32-225-cp27-cp27m-win32.whl#sha256=749e590875051661ecefbd9dfa957a485016de0f25e43f5e70f888ef1e29587b (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win_amd64: https://files.pythonhosted.org/packages/b7/e5/e99a695598f2e82e9da5fae177d520cdc9303294fdea29d256d8b06beb63/pywin32-225-cp27-cp27m-win_amd64.whl#sha256=81f7732b662c46274d7d8c411c905d53e71999cba95457a0686467c3ebc745ca (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win32: https://files.pythonhosted.org/packages/c5/7a/9caf071dfbbd53e5ec31639be826fb991970f00238a6e55b9bb38ad275e4/pywin32-225-cp35-cp35m-win32.whl#sha256=09bbe7cdb29eb40ab2e83f7a232eeeedde864be7a0622b70a90f456aad07a234 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win_amd64: https://files.pythonhosted.org/packages/94/10/bc01d305771e3f3eb7d42afee63ae3ee4f1a8924b20d9d98c3b19c7f58c4/pywin32-225-cp35-cp35m-win_amd64.whl#sha256=9db1fb8830bfa99c5bfd335d4482c14db5c6f5028db3b006787ef4200206242b (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win32: https://files.pythonhosted.org/packages/4e/98/edb9ffec08f9e44dddf4973ba9d6c7de18fd1c91f1de642ca14b4c283993/pywin32-225-cp36-cp36m-win32.whl#sha256=bd8d04835db28646d9e07fd0ab7c7b18bd90e89dfdc559e60389179495ef30da (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win_amd64: https://files.pythonhosted.org/packages/bb/29/2a8d06fd1e0547f129e6ed9f713027f98f2cf243aff3ece189a08b071d75/pywin32-225-cp36-cp36m-win_amd64.whl#sha256=7c89d2c11a31c7aaa16dc4d25054d7e0e99d6f6b24193cf62c83850484658c87 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win32: https://files.pythonhosted.org/packages/2e/89/a28df6a2b761e8324ffafe919ded680674be40dcf1348c6ffc6d0ec533c3/pywin32-225-cp37-cp37m-win32.whl#sha256=779d3e9d4b934f2445d2920c3941416d99af72eb7f7fd57a63576cc8aa540ad6 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win_amd64: https://files.pythonhosted.org/packages/b5/26/801bc6d99612977accac84b2d8ad06efa4a7d831c5e2813ca9baf700b646/pywin32-225-cp37-cp37m-win_amd64.whl#sha256=fc6822a68afd79e97b015985dd455767c72009b81bcd18957068626c43f11e75 (from https://pypi.org/simple/pywin32/)
+  Found link https://files.pythonhosted.org/packages/84/df/ec6e3f34581674613dd534db0095bed659054b7c4943fa4c2c608741dd33/pywin32-225-cp38-cp38-win32.whl#sha256=0db7c9f4b93528afd080d35912a60be2f86a1d6c49c0a9cf9cedd106eed81ea3 (from https://pypi.org/simple/pywin32/), version: 225
+  Skipping link: none of the wheel's tags match: cp38-cp38-win_amd64: https://files.pythonhosted.org/packages/ab/3f/a7a622573408bd63061a5e3a7de9912eda7623502b9e41572a4852a2c1d1/pywin32-225-cp38-cp38-win_amd64.whl#sha256=0443e9bb196e72480f50cbddc2cf98fbb858a77d02e281ba79489ea3287b36e9 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp39-cp39-win32: https://files.pythonhosted.org/packages/ec/1a/f288b94c88aa0e1978b1057894b78f94a1343a3532c91aa11546e86baf9c/pywin32-225-cp39-cp39-win32.whl#sha256=fe6cfc2045931866417740b575231c7e12d69d481643be1493487ad53b089959 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp39-cp39-win_amd64: https://files.pythonhosted.org/packages/3e/56/e51962f5afbbf09516fa8465facbc5c75c17878ce2eac66d7e59d6f3dd41/pywin32-225-cp39-cp39-win_amd64.whl#sha256=0d8e0f47808798d320c983574c36c49db642678902933a210edd40157d206fd0 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win32: https://files.pythonhosted.org/packages/ca/d5/284d4b84bdfc8eb983f0064393c6d08cd3afc050e318b9bf8e28c5fad700/pywin32-226-cp27-cp27m-win32.whl#sha256=10963cecd709b4ade5cc17c69ab2b6f8be7928704ead88ce80a0314f16f79ccb (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win_amd64: https://files.pythonhosted.org/packages/62/e5/5f42a7c008e0bff5153f2bff3ab92e8f0dab3cd767cce94968780bd48916/pywin32-226-cp27-cp27m-win_amd64.whl#sha256=9d5572ff1222e1cf7de9ad5a0602c86029e9784ba79f5bd231beaed4a99aed4a (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win32: https://files.pythonhosted.org/packages/f4/07/5fab4c97ae6a3a27f01f12781b34a8a0e6634582358132bfb63f5e65252e/pywin32-226-cp35-cp35m-win32.whl#sha256=c32a0a0fc6cf1026b7a854b3be01a6d963976f59a83bb70778f2f7b4be99c53b (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win_amd64: https://files.pythonhosted.org/packages/5b/a0/008bdff2fe2414865ad9d5aab02c4404058704dff85a98e754ab09d981e9/pywin32-226-cp35-cp35m-win_amd64.whl#sha256=275075aab5faa8b095b616cb7f7bf8c862a2188f35a545c864edaa7cd3a59499 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win32: https://files.pythonhosted.org/packages/76/78/ff1a25e66713d1a467edc4c22d74701c1ab582dac74cb4b1dc46f755903f/pywin32-226-cp36-cp36m-win32.whl#sha256=f0da6892cfef5d2f006b0cbd7df396e456d06e1d664f0633f50741a3b6f86430 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win_amd64: https://files.pythonhosted.org/packages/89/3a/ded659dbcd0630eb215fbc1dd0368a6e617c86eaef0ba0f3c6b1195e6e55/pywin32-226-cp36-cp36m-win_amd64.whl#sha256=4d6b633f17bcad3804de112ab3918fd5c7f4cf1c374017d00f5d25779af22951 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win32: https://files.pythonhosted.org/packages/69/e7/452c8bc28e785e3637d4d597e18b4ff9240e8b480053a59e81e5e5359b8b/pywin32-226-cp37-cp37m-win32.whl#sha256=edd3ea26ef4113160b996789727e4c641618de2bcc0c542d1fdc9f64272bc8b2 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win_amd64: https://files.pythonhosted.org/packages/dd/95/690ac56df1b2843a6153de0f22349465175081e39af161465060fe3bea0b/pywin32-226-cp37-cp37m-win_amd64.whl#sha256=d82bd01d85a8bf3cc23f66a1825742ff513ca0ce09b75b5caeb40c095d885fdd (from https://pypi.org/simple/pywin32/)
+  Found link https://files.pythonhosted.org/packages/ea/bd/a87a75287eb1e91cf31045fef7465eb8e25cfd91629f16fbfb2035b194c7/pywin32-226-cp38-cp38-win32.whl#sha256=0728f8b5bca4a2e6638430d18f5a4143d4a9120491aa8c1b5bd1ccba45543256 (from https://pypi.org/simple/pywin32/), version: 226
+  Skipping link: none of the wheel's tags match: cp38-cp38-win_amd64: https://files.pythonhosted.org/packages/03/a3/19efa81c4993987542a6a4caa7983d1fce9393462d0bd10be8ccb3a4f982/pywin32-226-cp38-cp38-win_amd64.whl#sha256=77f78fe8bad3c12e6453637cf19577c6eec49a85073205bf4a8bda0d9a2330bc (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp39-cp39-win32: https://files.pythonhosted.org/packages/65/72/9982d5b995318cbe863feff8297630862185e8999e6287d3f7c3e3974728/pywin32-226-cp39-cp39-win32.whl#sha256=b3023540e2802c970be07cb097b65464417298849b17d1ebbb52e4628ea3afc3 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp39-cp39-win_amd64: https://files.pythonhosted.org/packages/8f/9a/8d3ee0250df739cca805ba839bceedfbdd465cd4f2288274f7eac747bece/pywin32-226-cp39-cp39-win_amd64.whl#sha256=9a96fc015e6c0904593259873378d078e8bade404aae84f63d1aec0d5ea23404 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win32: https://files.pythonhosted.org/packages/78/81/6af315d1dbba278c44306f727d082048d385f6d4e5905aa95b3af14559e9/pywin32-227-cp27-cp27m-win32.whl#sha256=371fcc39416d736401f0274dd64c2302728c9e034808e37381b5e1b22be4a6b0 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win_amd64: https://files.pythonhosted.org/packages/a2/e6/6b395ea8bc9500158adea646e28077adb7f3d9587c681fd5d03693a4b5dc/pywin32-227-cp27-cp27m-win_amd64.whl#sha256=4cdad3e84191194ea6d0dd1b1b9bdda574ff563177d2adf2b4efec2a244fa116 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win32: https://files.pythonhosted.org/packages/e4/62/95d915898133585200b2c23e09bac7b95e3af980c057d68a29f5d80825db/pywin32-227-cp35-cp35m-win32.whl#sha256=f4c5be1a293bae0076d93c88f37ee8da68136744588bc5e2be2f299a34ceb7aa (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win_amd64: https://files.pythonhosted.org/packages/50/9f/d513d19e93c9967dd32734893e67ef8e3664fa9f26d36b3ef708dd5e7ef2/pywin32-227-cp35-cp35m-win_amd64.whl#sha256=a929a4af626e530383a579431b70e512e736e9588106715215bf685a3ea508d4 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win32: https://files.pythonhosted.org/packages/e9/5a/04eaf2ae543fb078f1e6f9be7c29149846e3f054a4111bfdfdd3510b7f58/pywin32-227-cp36-cp36m-win32.whl#sha256=300a2db938e98c3e7e2093e4491439e62287d0d493fe07cce110db070b54c0be (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win_amd64: https://files.pythonhosted.org/packages/f7/76/29e8e24a4967eb40fdf2f525aae53a1fd6e606382d957aa403f3f12ea235/pywin32-227-cp36-cp36m-win_amd64.whl#sha256=9b31e009564fb95db160f154e2aa195ed66bcc4c058ed72850d047141b36f3a2 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win32: https://files.pythonhosted.org/packages/17/6f/2cd5c3246f06513f4c369070d91286313b83b3178e886724d47f3c2be45d/pywin32-227-cp37-cp37m-win32.whl#sha256=47a3c7551376a865dd8d095a98deba954a98f326c6fe3c72d8726ca6e6b15507 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win_amd64: https://files.pythonhosted.org/packages/bb/23/00fe4fbf9963f3bcb34a443eba0d0283fc51e5887d4045552c87490394e4/pywin32-227-cp37-cp37m-win_amd64.whl#sha256=31f88a89139cb2adc40f8f0e65ee56a8c585f629974f9e07622ba80199057511 (from https://pypi.org/simple/pywin32/)
+  Found link https://files.pythonhosted.org/packages/9f/cb/d693f7cdaed51d83bfec5c77a9fa895c1a5a18cf242ba53b06b98ee366dd/pywin32-227-cp38-cp38-win32.whl#sha256=7f18199fbf29ca99dff10e1f09451582ae9e372a892ff03a28528a24d55875bc (from https://pypi.org/simple/pywin32/), version: 227
+  Skipping link: none of the wheel's tags match: cp38-cp38-win_amd64: https://files.pythonhosted.org/packages/cf/06/0d55292927ada3f8516e437292d85e33d6f763dd2dcc6b95f62a91ad9740/pywin32-227-cp38-cp38-win_amd64.whl#sha256=7c1ae32c489dc012930787f06244426f8356e129184a02c25aef163917ce158e (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp39-cp39-win32: https://files.pythonhosted.org/packages/9d/c9/953c3844d046577f5617f927d5c15760ef320e01699e4fd6d214917199c1/pywin32-227-cp39-cp39-win32.whl#sha256=c054c52ba46e7eb6b7d7dfae4dbd987a1bb48ee86debe3f245a2884ece46e295 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp39-cp39-win_amd64: https://files.pythonhosted.org/packages/56/74/3382d6a06050516f152ac703705794da033b92fc6385fda445631d645612/pywin32-227-cp39-cp39-win_amd64.whl#sha256=f27cec5e7f588c3d1051651830ecc00294f90728d19c3bf6916e6dba93ea357c (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win32: https://files.pythonhosted.org/packages/4a/78/d0065741617ee422e403ec92019346cf442f2ed65de8964c65ea98406bb5/pywin32-228-cp27-cp27m-win32.whl#sha256=37dc9935f6a383cc744315ae0c2882ba1768d9b06700a70f35dc1ce73cd4ba9c (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp27-cp27m-win_amd64: https://files.pythonhosted.org/packages/20/41/e266bb854b3d352641a4eaafe5b6b7ea3944039a9a1014ec481418e7f982/pywin32-228-cp27-cp27m-win_amd64.whl#sha256=11cb6610efc2f078c9e6d8f5d0f957620c333f4b23466931a247fb945ed35e89 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win32: https://files.pythonhosted.org/packages/4c/00/c9230047f4f9729ae8ff897f8f3ee70b7038560a3e1686fa916142b11e3a/pywin32-228-cp35-cp35m-win32.whl#sha256=1f45db18af5d36195447b2cffacd182fe2d296849ba0aecdab24d3852fbf3f80 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win_amd64: https://files.pythonhosted.org/packages/94/55/04cfc091b15d8a313afd6c1ab5ec9fa004cec2c18b30363ce4b68221b9d5/pywin32-228-cp35-cp35m-win_amd64.whl#sha256=6e38c44097a834a4707c1b63efa9c2435f5a42afabff634a17f563bc478dfcc8 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win32: https://files.pythonhosted.org/packages/91/ce/f22a0bf24639d485a173d11a0367ddac420a6d30ab6adc1f07c6c2f4d463/pywin32-228-cp36-cp36m-win32.whl#sha256=ec16d44b49b5f34e99eb97cf270806fdc560dff6f84d281eb2fcb89a014a56a9 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win_amd64: https://files.pythonhosted.org/packages/e7/8a/8458687e4f1a7978bd59f8fd0bc4e6c56cf640c551877ca9a3e35239ae5b/pywin32-228-cp36-cp36m-win_amd64.whl#sha256=a60d795c6590a5b6baeacd16c583d91cce8038f959bd80c53bd9a68f40130f2d (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win32: https://files.pythonhosted.org/packages/ac/4d/c92043875d217bb272da07f2cb859e41541d63af26d3ca4f04da05eb5396/pywin32-228-cp37-cp37m-win32.whl#sha256=af40887b6fc200eafe4d7742c48417529a8702dcc1a60bf89eee152d1d11209f (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win_amd64: https://files.pythonhosted.org/packages/96/51/d46eb277182e0989a81cdc0933e97924b68b12519dfe62ae0ea5dec198dd/pywin32-228-cp37-cp37m-win_amd64.whl#sha256=00eaf43dbd05ba6a9b0080c77e161e0b7a601f9a3f660727a952e40140537de7 (from https://pypi.org/simple/pywin32/)
+  Found link https://files.pythonhosted.org/packages/4c/6d/e47d8020c21849498d84fb9f75e4d7ab3414eebacb85fa7e1d61e34fae67/pywin32-228-cp38-cp38-win32.whl#sha256=fa6ba028909cfc64ce9e24bcf22f588b14871980d9787f1e2002c99af8f1850c (from https://pypi.org/simple/pywin32/), version: 228
+  Skipping link: none of the wheel's tags match: cp38-cp38-win_amd64: https://files.pythonhosted.org/packages/d6/ef/db6c352b19eee9f944c03a6ae304ac7c5f96ef3b8429ec905b3e2c64a4af/pywin32-228-cp38-cp38-win_amd64.whl#sha256=9b3466083f8271e1a5eb0329f4e0d61925d46b40b195a33413e0905dccb285e8 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp39-cp39-win32: https://files.pythonhosted.org/packages/70/7a/420a1ce8cfb2d4a72e84d9a1920ad13af515a8bffb1c999333391148d0e0/pywin32-228-cp39-cp39-win32.whl#sha256=ed74b72d8059a6606f64842e7917aeee99159ebd6b8d6261c518d002837be298 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp39-cp39-win_amd64: https://files.pythonhosted.org/packages/41/1f/a08446b6b2f55b79eb13befa0feb703bb4b3792b977d6c385edafc2b624a/pywin32-228-cp39-cp39-win_amd64.whl#sha256=8319bafdcd90b7202c50d6014efdfe4fde9311b3ff15fd6f893a45c0868de203 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win32: https://files.pythonhosted.org/packages/a9/f4/48f406e208db08acd6444867e7673effa2b424b38bc85d336fc98234c2ce/pywin32-300-cp35-cp35m-win32.whl#sha256=1c204a81daed2089e55d11eefa4826c05e604d27fe2be40b6bf8db7b6a39da63 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp35-cp35m-win_amd64: https://files.pythonhosted.org/packages/72/77/b02f15f1a488c015f9d41dda1c83d97af8dc9c98f8dab5d4894fd01c4ee4/pywin32-300-cp35-cp35m-win_amd64.whl#sha256=350c5644775736351b77ba68da09a39c760d75d2467ecec37bd3c36a94fbed64 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win32: https://files.pythonhosted.org/packages/9d/bf/c45959eaf99f56aa7e13d27a6b730eafb7ee0a94b5562b1f04444c25545f/pywin32-300-cp36-cp36m-win32.whl#sha256=a3b4c48c852d4107e8a8ec980b76c94ce596ea66d60f7a697582ea9dce7e0db7 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp36-cp36m-win_amd64: https://files.pythonhosted.org/packages/e3/7c/4337532a595288e4eabbbca09e9dd47f924b0fbb25a66b98bc21fe4a2551/pywin32-300-cp36-cp36m-win_amd64.whl#sha256=27a30b887afbf05a9cbb05e3ffd43104a9b71ce292f64a635389dbad0ed1cd85 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win32: https://files.pythonhosted.org/packages/2e/4e/aa126480d86d448924453ec77421ae97b558c650468c0cb9bc5d693058bf/pywin32-300-cp37-cp37m-win32.whl#sha256=d7e8c7efc221f10d6400c19c32a031add1c4a58733298c09216f57b4fde110dc (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp37-cp37m-win_amd64: https://files.pythonhosted.org/packages/25/54/177ee28fec4ecd23fa539f3df78067e7a4927515b84eac34e36060fcdb8d/pywin32-300-cp37-cp37m-win_amd64.whl#sha256=8151e4d7a19262d6694162d6da85d99a16f8b908949797fd99c83a0bfaf5807d (from https://pypi.org/simple/pywin32/)
+  Found link https://files.pythonhosted.org/packages/b8/11/bf4377e5a2e758ad762883b5b686bc04b4320a9f694ce687da4d7e974059/pywin32-300-cp38-cp38-win32.whl#sha256=fbb3b1b0fbd0b4fc2a3d1d81fe0783e30062c1abed1d17c32b7879d55858cfae (from https://pypi.org/simple/pywin32/), version: 300
+  Skipping link: none of the wheel's tags match: cp38-cp38-win_amd64: https://files.pythonhosted.org/packages/a3/ca/d4011eb7f4cb4948e9b0c369d2922ffc75035a78ba190206e3e8bd294839/pywin32-300-cp38-cp38-win_amd64.whl#sha256=60a8fa361091b2eea27f15718f8eb7f9297e8d51b54dbc4f55f3d238093d5190 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp39-cp39-win32: https://files.pythonhosted.org/packages/51/b2/09791fbc5a1004e737173c123a1660c6701bf39b8809913f9a3f64ff954c/pywin32-300-cp39-cp39-win32.whl#sha256=638b68eea5cfc8def537e43e9554747f8dee786b090e47ead94bfdafdb0f2f50 (from https://pypi.org/simple/pywin32/)
+  Skipping link: none of the wheel's tags match: cp39-cp39-win_amd64: https://files.pythonhosted.org/packages/97/e3/cca8a7ca9bcbd756157f371e885dc64da10b2f9a74af2e89675576560e11/pywin32-300-cp39-cp39-win_amd64.whl#sha256=b1609ce9bd5c411b81f941b246d683d6508992093203d4eb7f278f4ed1085c3f (from https://pypi.org/simple/pywin32/)
+Given no hashes to check 5 links for project 'pywin32': discarding no candidates
+Collecting pywin32>=223
+  Created temporary directory: C:\Users\chanroy\AppData\Local\Temp\pip-unpack-f5w343d0
+  Looking up "https://files.pythonhosted.org/packages/b8/11/bf4377e5a2e758ad762883b5b686bc04b4320a9f694ce687da4d7e974059/pywin32-300-cp38-cp38-win32.whl" in the cache
+  Current age based on date: 1149
+  Ignoring unknown cache-control directive: immutable
+  Freshness lifetime from max-age: 365000000
+  The response is "fresh", returning cached response
+  365000000 > 1149
+  Using cached pywin32-300-cp38-cp38-win32.whl (8.5 MB)
+  Added pywin32>=223 from https://files.pythonhosted.org/packages/b8/11/bf4377e5a2e758ad762883b5b686bc04b4320a9f694ce687da4d7e974059/pywin32-300-cp38-cp38-win32.whl#sha256=fbb3b1b0fbd0b4fc2a3d1d81fe0783e30062c1abed1d17c32b7879d55858cfae (from pypiwin32->pyttsx3==2.6) to build tracker 'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-req-tracker-d02srpvk'
+  Removed pywin32>=223 from https://files.pythonhosted.org/packages/b8/11/bf4377e5a2e758ad762883b5b686bc04b4320a9f694ce687da4d7e974059/pywin32-300-cp38-cp38-win32.whl#sha256=fbb3b1b0fbd0b4fc2a3d1d81fe0783e30062c1abed1d17c32b7879d55858cfae (from pypiwin32->pyttsx3==2.6) from build tracker 'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-req-tracker-d02srpvk'
+Created temporary directory: C:\Users\chanroy\AppData\Local\Temp\pip-unpack-i4kr4ec8
+Using legacy 'setup.py install' for pyttsx3, since package 'wheel' is not installed.
+Installing collected packages: pywin32, pypiwin32, pyttsx3
+
+
+  Created temporary directory: C:\Users\chanroy\AppData\Local\Temp\pip-record-d2vfqroi
+    Running command 'c:\program files (x86)\python38-32\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-install-vezpbsme\\pyttsx3_eeec948be01f4e65b05c5cf31a977220\\setup.py'"'"'; __file__='"'"'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-install-vezpbsme\\pyttsx3_eeec948be01f4e65b05c5cf31a977220\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\chanroy\AppData\Local\Temp\pip-record-d2vfqroi\install-record.txt' --single-version-externally-managed --compile --install-headers 'c:\program files (x86)\python38-32\Include\pyttsx3'
+    c:\program files (x86)\python38-32\lib\distutils\dist.py:274: UserWarning: Unknown distribution option: 'summary'
+      warnings.warn(msg)
+    running install
+    running build
+    running build_py
+    creating build
+    creating build\lib
+    creating build\lib\pyttsx3
+    copying pyttsx3\driver.py -> build\lib\pyttsx3
+    copying pyttsx3\engine.py -> build\lib\pyttsx3
+    copying pyttsx3\six.py -> build\lib\pyttsx3
+    copying pyttsx3\voice.py -> build\lib\pyttsx3
+    copying pyttsx3\__init__.py -> build\lib\pyttsx3
+    creating build\lib\pyttsx3\drivers
+    copying pyttsx3\drivers\dummy.py -> build\lib\pyttsx3\drivers
+    copying pyttsx3\drivers\espeak.py -> build\lib\pyttsx3\drivers
+    copying pyttsx3\drivers\nsss.py -> build\lib\pyttsx3\drivers
+    copying pyttsx3\drivers\sapi5.py -> build\lib\pyttsx3\drivers
+    copying pyttsx3\drivers\_espeak.py -> build\lib\pyttsx3\drivers
+    copying pyttsx3\drivers\__init__.py -> build\lib\pyttsx3\drivers
+    running install_lib
+    copying build\lib\pyttsx3\driver.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3
+    copying build\lib\pyttsx3\drivers\dummy.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers
+    copying build\lib\pyttsx3\drivers\espeak.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers
+    copying build\lib\pyttsx3\drivers\nsss.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers
+    copying build\lib\pyttsx3\drivers\sapi5.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers
+    copying build\lib\pyttsx3\drivers\_espeak.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers
+    copying build\lib\pyttsx3\drivers\__init__.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers
+    copying build\lib\pyttsx3\engine.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3
+    copying build\lib\pyttsx3\six.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3
+    copying build\lib\pyttsx3\voice.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3
+    copying build\lib\pyttsx3\__init__.py -> c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\driver.py to driver.cpython-38.pyc
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers\dummy.py to dummy.cpython-38.pyc
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers\espeak.py to espeak.cpython-38.pyc
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers\nsss.py to nsss.cpython-38.pyc
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers\sapi5.py to sapi5.cpython-38.pyc
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers\_espeak.py to _espeak.cpython-38.pyc
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\drivers\__init__.py to __init__.cpython-38.pyc
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\engine.py to engine.cpython-38.pyc
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\six.py to six.cpython-38.pyc
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\voice.py to voice.cpython-38.pyc
+    byte-compiling c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3\__init__.py to __init__.cpython-38.pyc
+    running install_egg_info
+    running egg_info
+    writing pyttsx3.egg-info\PKG-INFO
+    writing dependency_links to pyttsx3.egg-info\dependency_links.txt
+    writing requirements to pyttsx3.egg-info\requires.txt
+    writing top-level names to pyttsx3.egg-info\top_level.txt
+    reading manifest file 'pyttsx3.egg-info\SOURCES.txt'
+    writing manifest file 'pyttsx3.egg-info\SOURCES.txt'
+    Copying pyttsx3.egg-info to c:\program files (x86)\python38-32\Lib\site-packages\pyttsx3-2.6-py3.8.egg-info
+    running install_scripts
+    writing list of installed files to 'C:\Users\chanroy\AppData\Local\Temp\pip-record-d2vfqroi\install-record.txt'
+    Running setup.py install for pyttsx3 ... done
+Successfully installed pypiwin32-223 pyttsx3-2.90 pywin32-300
+Removed build tracker: 'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-req-tracker-d02srpvk'
+
+C:\Users\chanroy\Desktop\python\Project>pip install -Iv pyttsx3==2.6 -U
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+[<pyttsx3.voice.Voice object at 0x0380F0B8>, <pyttsx3.voice.Voice object at 0x0380F3A0>]
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+  File "project1.py", line 8
+    engine.setProperty('voice', voices[0].id]
+                                            ^
+SyntaxError: closing parenthesis ']' does not match opening parenthesis '('
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0
+Traceback (most recent call last):
+  File "project1.py", line 21, in <module>
+    speak("Tom is good boy")
+  File "project1.py", line 16, in speak
+    engine.say(audio)
+NameError: name 'audio' is not defined
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0
+12
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_DAVID_11.0
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Speech\Voices\Tokens\TTS_MS_EN-US_ZIRA_11.0
+
+C:\Users\chanroy\Desktop\python\Project>pip install speechRecognition
+Collecting speechRecognition
+  Downloading SpeechRecognition-3.8.1-py2.py3-none-any.whl (32.8 MB)
+     |████████████████████████████████| 32.8 MB 57 kB/s
+Installing collected packages: speechRecognition
+Successfully installed speechRecognition-3.8.1
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 108, in get_pyaudio
+    import pyaudio
+ModuleNotFoundError: No module named 'pyaudio'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "project1.py", line 63, in <module>
+    takeCommand()
+  File "project1.py", line 41, in takeCommand
+    with sr.Microphone() as source:
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 79, in __init__
+    self.pyaudio_module = self.get_pyaudio()
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 110, in get_pyaudio
+    raise AttributeError("Could not find PyAudio; check installation")
+AttributeError: Could not find PyAudio; check installation
+
+C:\Users\chanroy\Desktop\python\Project>pip install PyAudio
+Collecting PyAudio
+  Downloading PyAudio-0.2.11.tar.gz (37 kB)
+Using legacy 'setup.py install' for PyAudio, since package 'wheel' is not installed.
+Installing collected packages: PyAudio
+    Running setup.py install for PyAudio ... error
+    ERROR: Command errored out with exit status 1:
+     command: 'c:\program files (x86)\python38-32\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-install-kgoztn05\\pyaudio_2edf5500d8064fb2bef21774f61e17c2\\setup.py'"'"'; __file__='"'"'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-install-kgoztn05\\pyaudio_2edf5500d8064fb2bef21774f61e17c2\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\chanroy\AppData\Local\Temp\pip-record-dynp_iie\install-record.txt' --single-version-externally-managed --compile --install-headers 'c:\program files (x86)\python38-32\Include\PyAudio'
+         cwd: C:\Users\chanroy\AppData\Local\Temp\pip-install-kgoztn05\pyaudio_2edf5500d8064fb2bef21774f61e17c2\
+    Complete output (9 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build\lib.win32-3.8
+    copying src\pyaudio.py -> build\lib.win32-3.8
+    running build_ext
+    building '_portaudio' extension
+    error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": https://visualstudio.microsoft.com/downloads/
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'c:\program files (x86)\python38-32\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-install-kgoztn05\\pyaudio_2edf5500d8064fb2bef21774f61e17c2\\setup.py'"'"'; __file__='"'"'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-install-kgoztn05\\pyaudio_2edf5500d8064fb2bef21774f61e17c2\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\chanroy\AppData\Local\Temp\pip-record-dynp_iie\install-record.txt' --single-version-externally-managed --compile --install-headers 'c:\program files (x86)\python38-32\Include\PyAudio' Check the logs for full command output.
+
+C:\Users\chanroy\Desktop\python\Project>pip3 install pyaudio
+Collecting pyaudio
+  Using cached PyAudio-0.2.11.tar.gz (37 kB)
+Using legacy 'setup.py install' for pyaudio, since package 'wheel' is not installed.
+Installing collected packages: pyaudio
+    Running setup.py install for pyaudio ... error
+    ERROR: Command errored out with exit status 1:
+     command: 'c:\program files (x86)\python38-32\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-install-2p_d2pi3\\pyaudio_8cf91995f1084c7483b5280fa24dbc15\\setup.py'"'"'; __file__='"'"'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-install-2p_d2pi3\\pyaudio_8cf91995f1084c7483b5280fa24dbc15\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\chanroy\AppData\Local\Temp\pip-record-i8e0yg8q\install-record.txt' --single-version-externally-managed --compile --install-headers 'c:\program files (x86)\python38-32\Include\pyaudio'
+         cwd: C:\Users\chanroy\AppData\Local\Temp\pip-install-2p_d2pi3\pyaudio_8cf91995f1084c7483b5280fa24dbc15\
+    Complete output (9 lines):
+    running install
+    running build
+    running build_py
+    creating build
+    creating build\lib.win32-3.8
+    copying src\pyaudio.py -> build\lib.win32-3.8
+    running build_ext
+    building '_portaudio' extension
+    error: Microsoft Visual C++ 14.0 is required. Get it with "Microsoft Visual C++ Build Tools": https://visualstudio.microsoft.com/downloads/
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: 'c:\program files (x86)\python38-32\python.exe' -u -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-install-2p_d2pi3\\pyaudio_8cf91995f1084c7483b5280fa24dbc15\\setup.py'"'"'; __file__='"'"'C:\\Users\\chanroy\\AppData\\Local\\Temp\\pip-install-2p_d2pi3\\pyaudio_8cf91995f1084c7483b5280fa24dbc15\\setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record 'C:\Users\chanroy\AppData\Local\Temp\pip-record-i8e0yg8q\install-record.txt' --single-version-externally-managed --compile --install-headers 'c:\program files (x86)\python38-32\Include\pyaudio' Check the logs for full command output.
+
+C:\Users\chanroy\Desktop\python\Project>pip install pipwin
+Collecting pipwin
+  Downloading pipwin-0.5.1.tar.gz (8.8 kB)
+Collecting docopt
+  Downloading docopt-0.6.2.tar.gz (25 kB)
+Requirement already satisfied: requests in c:\program files (x86)\python38-32\lib\site-packages (from pipwin) (2.25.1)
+Collecting pyprind
+  Downloading PyPrind-2.11.2-py3-none-any.whl (8.6 kB)
+Collecting six
+  Downloading six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting beautifulsoup4>=4.9.0
+  Downloading beautifulsoup4-4.9.3-py3-none-any.whl (115 kB)
+     |████████████████████████████████| 115 kB 242 kB/s
+Collecting js2py
+  Downloading Js2Py-0.70-py3-none-any.whl (605 kB)
+     |████████████████████████████████| 605 kB 182 kB/s
+Collecting packaging
+  Downloading packaging-20.9-py2.py3-none-any.whl (40 kB)
+     |████████████████████████████████| 40 kB 218 kB/s
+Collecting pySmartDL>=1.3.1
+  Downloading pySmartDL-1.3.4-py3-none-any.whl (20 kB)
+Collecting soupsieve>1.2
+  Downloading soupsieve-2.2-py3-none-any.whl (33 kB)
+Collecting pyjsparser>=2.5.1
+  Downloading pyjsparser-2.7.1.tar.gz (24 kB)
+Collecting tzlocal>=1.2
+  Downloading tzlocal-2.1-py2.py3-none-any.whl (16 kB)
+Requirement already satisfied: pytz in c:\program files (x86)\python38-32\lib\site-packages (from tzlocal>=1.2->js2py->pipwin) (2020.5)
+Collecting pyparsing>=2.0.2
+  Downloading pyparsing-2.4.7-py2.py3-none-any.whl (67 kB)
+     |████████████████████████████████| 67 kB 239 kB/s
+Requirement already satisfied: idna<3,>=2.5 in c:\program files (x86)\python38-32\lib\site-packages (from requests->pipwin) (2.10)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\program files (x86)\python38-32\lib\site-packages (from requests->pipwin) (1.26.3)
+Requirement already satisfied: certifi>=2017.4.17 in c:\program files (x86)\python38-32\lib\site-packages (from requests->pipwin) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in c:\program files (x86)\python38-32\lib\site-packages (from requests->pipwin) (4.0.0)
+Using legacy 'setup.py install' for pipwin, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for docopt, since package 'wheel' is not installed.
+Using legacy 'setup.py install' for pyjsparser, since package 'wheel' is not installed.
+Installing collected packages: tzlocal, soupsieve, six, pyparsing, pyjsparser, pySmartDL, pyprind, packaging, js2py, docopt, beautifulsoup4, pipwin
+    Running setup.py install for pyjsparser ... done
+    Running setup.py install for docopt ... done
+    Running setup.py install for pipwin ... done
+Successfully installed beautifulsoup4-4.9.3 docopt-0.6.2 js2py-0.70 packaging-20.9 pipwin-0.5.1 pySmartDL-1.3.4 pyjsparser-2.7.1 pyparsing-2.4.7 pyprind-2.11.2 six-1.15.0 soupsieve-2.2 tzlocal-2.1
+
+C:\Users\chanroy\Desktop\python\Project>pipwin install pyaudio
+Building cache. Hang on . . .
+Done
+Package `pyaudio` found in cache
+Downloading package . . .
+https://download.lfd.uci.edu/pythonlibs/w4tscw6k/PyAudio-0.2.11-cp38-cp38-win32.whl
+PyAudio-0.2.11-cp38-cp38-win32.whl
+ [*] 94 kB / 94 kB @ 26 kB/s [##################] [100%, 0s left]
+Processing c:\users\chanroy\pipwin\pyaudio-0.2.11-cp38-cp38-win32.whl
+Installing collected packages: PyAudio
+Successfully installed PyAudio-0.2.11
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+name 'auido' is not defined
+Say that again Please....
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+name 'auido' is not defined
+Say that again Please....
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:how are you
+
+
+C:\Users\chanroy\Desktop\python\Project>pip install wikipedia
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<pip._vendor.urllib3.connection.HTTPSConnection object at 0x04A31D48>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed')': /simple/wikipedia/
+WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/wikipedia/
+ERROR: Operation cancelled by user
+Traceback (most recent call last):
+  File "c:\program files (x86)\python38-32\lib\runpy.py", line 193, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "c:\program files (x86)\python38-32\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Program Files (x86)\Python38-32\Scripts\pip.exe\__main__.py", line 9, in <module>
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\cli\main.py", line 73, in main
+    return command.main(cmd_args)
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\cli\base_command.py", line 111, in main
+    return self._main(args)
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\cli\base_command.py", line 226, in _main
+    self.handle_pip_version_check(options)
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\cli\req_command.py", line 145, in handle_pip_version_check
+    session = self._build_session(
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\cli\req_command.py", line 86, in _build_session
+    session = PipSession(
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\network\session.py", line 245, in __init__
+    self.headers["User-Agent"] = user_agent()
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\network\session.py", line 159, in user_agent
+    setuptools_version = get_installed_version("setuptools")
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\utils\misc.py", line 644, in get_installed_version
+    working_set = pkg_resources.WorkingSet()
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 567, in __init__
+    self.add_entry(entry)
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 623, in add_entry
+    for dist in find_distributions(entry, True):
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 2049, in find_on_path
+    entries = safe_listdir(path_item)
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_vendor\pkg_resources\__init__.py", line 2108, in safe_listdir
+    return os.listdir(path)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>
+C:\Users\chanroy\Desktop\python\Project>
+C:\Users\chanroy\Desktop\python\Project>pip3 install wikipedia
+WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='pypi.org', port=443): Read timed out. (read timeout=15)")': /simple/wikipedia/
+Collecting wikipedia
+  WARNING: Retrying (Retry(total=4, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out. (read timeout=15)")': /packages/67/35/25e68fbc99e672127cc6fbb14b8ec1ba3dfef035bf1e4c90f78f24a80b7d/wikipedia-1.4.0.tar.gz
+  WARNING: Retrying (Retry(total=3, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='files.pythonhosted.org', port=443): Read timed out. (read timeout=15)")': /packages/67/35/25e68fbc99e672127cc6fbb14b8ec1ba3dfef035bf1e4c90f78f24a80b7d/wikipedia-1.4.0.tar.gz
+ERROR: Operation cancelled by user
+
+C:\Users\chanroy\Desktop\python\Project>pip install wikipedia
+Collecting wikipedia
+  Downloading wikipedia-1.4.0.tar.gz (27 kB)
+Requirement already satisfied: beautifulsoup4 in c:\program files (x86)\python38-32\lib\site-packages (from wikipedia) (4.9.3)
+Requirement already satisfied: requests<3.0.0,>=2.0.0 in c:\program files (x86)\python38-32\lib\site-packages (from wikipedia) (2.25.1)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in c:\program files (x86)\python38-32\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (1.26.3)
+Requirement already satisfied: idna<3,>=2.5 in c:\program files (x86)\python38-32\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2.10)
+Requirement already satisfied: certifi>=2017.4.17 in c:\program files (x86)\python38-32\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (2020.12.5)
+Requirement already satisfied: chardet<5,>=3.0.2 in c:\program files (x86)\python38-32\lib\site-packages (from requests<3.0.0,>=2.0.0->wikipedia) (4.0.0)
+Requirement already satisfied: soupsieve>1.2 in c:\program files (x86)\python38-32\lib\site-packages (from beautifulsoup4->wikipedia) (2.2)
+Using legacy 'setup.py install' for wikipedia, since package 'wheel' is not installed.
+Installing collected packages: wikipedia
+    Running setup.py install for wikipedia ... done
+Successfully installed wikipedia-1.4.0
+
+C:\Users\chanroy\Desktop\python\Project>pip install wikipedia
+Traceback (most recent call last):
+  File "c:\program files (x86)\python38-32\lib\genericpath.py", line 30, in isfile
+    st = os.stat(path)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'c:\\program files (x86)\\python38-32\\Modules\\Setup'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\program files (x86)\python38-32\lib\runpy.py", line 193, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "c:\program files (x86)\python38-32\lib\runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "C:\Program Files (x86)\Python38-32\Scripts\pip.exe\__main__.py", line 5, in <module>
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\cli\main.py", line 8, in <module>
+    from pip._internal.cli.autocompletion import autocomplete
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\cli\autocompletion.py", line 9, in <module>
+    from pip._internal.cli.main_parser import create_main_parser
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\cli\main_parser.py", line 7, in <module>
+    from pip._internal.cli import cmdoptions
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\cli\cmdoptions.py", line 22, in <module>
+    from pip._internal.cli.progress_bars import BAR_TYPES
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\cli\progress_bars.py", line 9, in <module>
+    from pip._internal.utils.logging import get_indentation
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\utils\logging.py", line 14, in <module>
+    from pip._internal.utils.misc import ensure_dir
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\utils\misc.py", line 29, in <module>
+    from pip._internal.locations import get_major_minor_version, site_packages, user_site
+  File "c:\program files (x86)\python38-32\lib\site-packages\pip\_internal\locations.py", line 11, in <module>
+    from distutils.command.install import SCHEME_KEYS
+  File "c:\program files (x86)\python38-32\lib\distutils\command\install.py", line 11, in <module>
+    from distutils.sysconfig import get_config_vars
+  File "c:\program files (x86)\python38-32\lib\distutils\sysconfig.py", line 65, in <module>
+    python_build = _python_build()
+  File "c:\program files (x86)\python38-32\lib\distutils\sysconfig.py", line 63, in _python_build
+    return _is_python_source_dir(project_base)
+  File "c:\program files (x86)\python38-32\lib\distutils\sysconfig.py", line 45, in _is_python_source_dir
+    if os.path.isfile(os.path.join(d, "Modules", fn)):
+  File "c:\program files (x86)\python38-32\lib\genericpath.py", line 30, in isfile
+    st = os.stat(path)
+KeyboardInterrupt
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+  File "project1.py", line 74
+    speak('Arcoding to wikipedia")
+                                 ^
+SyntaxError: EOL while scanning string literal
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:according to Wikipedia
+
+Traceback (most recent call last):
+  File "project1.py", line 70, in <module>
+    if 'wikipedia' in query:
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Shahrukh Khan according to Wikipedia
+
+Traceback (most recent call last):
+  File "project1.py", line 70, in <module>
+    if 'wikipedia' in query:
+TypeError: argument of type 'builtin_function_or_method' is not iterable
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Shahrukh Khan according to Wikipedia
+
+Traceback (most recent call last):
+  File "project1.py", line 73, in <module>
+    results= wikipedia.summary(query,sentances=2)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\wikipedia\util.py", line 28, in __call__
+    ret = self._cache[key] = self.fn(*args, **kwargs)
+TypeError: summary() got an unexpected keyword argument 'sentances'
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:connecting to Wikipedia
+
+Listening.........
+Recognising....
+User said:Shahrukh Khan according to Wikipedia
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 69, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 48, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Dhadkan according to Wikipedia
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 69, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 48, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 620, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:please open the YouTube
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 69, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 48, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:open YouTube
+
+Listening.........
+Recognising....
+User said:open YouTube
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 69, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 48, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Jarvis open the Google
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:Dhanush open the google.com
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:open the google.com
+
+Listening.........
+Recognising....
+User said:open Google
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:openstack Pro
+
+Listening.........
+Recognising....
+User said:openstack flow
+
+Listening.........
+Recognising....
+User said:open stock Pro
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:open stack overflow
+
+Listening.........
+Recognising....
+User said:open stack overflow
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:open stack overflow
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:open stack overflow
+
+Listening.........
+Recognising....
+User said:open Google
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 69, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 48, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:play music
+
+Traceback (most recent call last):
+  File "project1.py", line 88, in <module>
+    songs = os.listdir(music_dir)
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'D:\\songs'
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:what is the time
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:12 x
+
+Listening.........
+Recognising....
+User said:what is the time Jarvis
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 70, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 658, in listen
+    energy = audioop.rms(buffer, source.SAMPLE_WIDTH)  # unit energy of the audio signal within the buffer
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:open database
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 70, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:email.com
+
+Listening.........
+Recognising....
+User said:good boy
+
+(535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials 9sm11368484pgw.61 - gsmtp')
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 113, in <module>
+    content=takeCommand()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+  File "project1.py", line 120
+    elif ' bye bye jarvis':
+                          ^
+IndentationError: unindent does not match any outer indentation level
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+  File "project1.py", line 120
+    elif 'bye bye jarvis' in query:
+                                  ^
+IndentationError: unindent does not match any outer indentation level
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+  File "project1.py", line 121
+    elif 'bye bye jarvis' in query:
+                                  ^
+IndentationError: unindent does not match any outer indentation level
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:open Google
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:bye bye service
+
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Google
+
+Listening.........
+Recognising....
+User said:open Google
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:wi-fi service
+
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:open Google
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:open Google
+
+Listening.........
+Recognising....
+User said:open Google
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 620, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye bye
+
+Listening.........
+Recognising....
+User said:Bible game
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:bye bye
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:open database
+
+This is test
+Listening.........
+Recognising....
+
+Say that again Please....
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 46, in takeCommand
+    with sr.Microphone() as source:
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 138, in __enter__
+    self.audio.open(
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 750, in open
+    stream = Stream(self, *args, **kwargs)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 441, in __init__
+    self._stream = pa.open(**arguments)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye bye
+
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye bye
+
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye bye Sanjay
+
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Sanjay
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:Sanjay
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:ke liye
+
+Listening.........
+Recognising....
+User said:bye bye Sanjay
+
+
+C:\Users\chanroy\Desktop\python\Project>pipwin install pyaudio
+Package `pyaudio` found in cache
+Downloading package . . .
+https://download.lfd.uci.edu/pythonlibs/w4tscw6k/PyAudio-0.2.11-cp38-cp38-win32.whl
+PyAudio-0.2.11-cp38-cp38-win32.whl
+Traceback (most recent call last):
+  File "C:\Program Files (x86)\Python38-32\Scripts\pipwin-script.py", line 11, in <module>
+    load_entry_point('pipwin==0.5.1', 'console_scripts', 'pipwin')()
+  File "c:\program files (x86)\python38-32\lib\site-packages\pipwin\command.py", line 103, in main
+    cache.install(package)
+  File "c:\program files (x86)\python38-32\lib\site-packages\pipwin\pipwin.py", line 300, in install
+    wheel_file = self.download(requirement)
+  File "c:\program files (x86)\python38-32\lib\site-packages\pipwin\pipwin.py", line 294, in download
+    return self._download(requirement, dest)
+  File "c:\program files (x86)\python38-32\lib\site-packages\pipwin\pipwin.py", line 289, in _download
+    obj = SmartDL(url, dest)
+  File "c:\program files (x86)\python38-32\lib\site-packages\pySmartDL\pySmartDL.py", line 136, in __init__
+    if not utils.is_HTTPRange_supported(self.url, timeout=self.timeout):
+  File "c:\program files (x86)\python38-32\lib\site-packages\pySmartDL\utils.py", line 100, in is_HTTPRange_supported
+    fullsize = get_filesize(url, timeout=timeout)
+  File "c:\program files (x86)\python38-32\lib\site-packages\pySmartDL\utils.py", line 127, in get_filesize
+    urlObj = urllib.request.urlopen(url, timeout=timeout)
+  File "c:\program files (x86)\python38-32\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "c:\program files (x86)\python38-32\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "c:\program files (x86)\python38-32\lib\urllib\request.py", line 542, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "c:\program files (x86)\python38-32\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "c:\program files (x86)\python38-32\lib\urllib\request.py", line 1362, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+  File "c:\program files (x86)\python38-32\lib\urllib\request.py", line 1319, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "c:\program files (x86)\python38-32\lib\http\client.py", line 1230, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "c:\program files (x86)\python38-32\lib\http\client.py", line 1276, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "c:\program files (x86)\python38-32\lib\http\client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "c:\program files (x86)\python38-32\lib\http\client.py", line 1004, in _send_output
+    self.send(msg)
+  File "c:\program files (x86)\python38-32\lib\http\client.py", line 944, in send
+    self.connect()
+  File "c:\program files (x86)\python38-32\lib\http\client.py", line 1392, in connect
+    super().connect()
+  File "c:\program files (x86)\python38-32\lib\http\client.py", line 915, in connect
+    self.sock = self._create_connection(
+  File "c:\program files (x86)\python38-32\lib\socket.py", line 787, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+  File "c:\program files (x86)\python38-32\lib\socket.py", line 918, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye bye
+
+Listening.........
+Recognising....
+User said:Aditya bhai market
+
+Listening.........
+Recognising....
+User said:Bhai Bhai Sanjay
+
+Listening.........
+Recognising....
+User said:bye bye bye bye Sanjay
+
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Hindi mein sexy
+
+Listening.........
+Recognising....
+User said:game
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye-bye Chintamani
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye-bye Chintamani
+
+Listening.........
+Recognising....
+User said:bye-bye Chintamani
+
+Listening.........
+Recognising....
+User said:Chintamani
+
+Listening.........
+Recognising....
+User said:dhanyvad video Chintamani
+
+Listening.........
+Recognising....
+User said:mama Chintamani video
+
+Listening.........
+Recognising....
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 53, in takeCommand
+    query= r.recognize_google(audio, language='en-in')
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 840, in recognize_google
+    response = urlopen(request, timeout=self.operation_timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 542, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 1348, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 1323, in do_open
+    r = h.getresponse()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Program Files (x86)\Python38-32\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye-bye Chintamani
+
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Chintamani
+
+Listening.........
+Recognising....
+User said:Chintamani
+
+Listening.........
+Recognising....
+User said:bike information
+
+Listening.........
+Recognising....
+User said:bike information
+
+Listening.........
+Recognising....
+User said:Chintamani
+
+Listening.........
+Recognising....
+User said:bike Chintamani
+
+Listening.........
+Recognising....
+User said:bike bike
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Chintamani
+
+Listening.........
+Recognising....
+User said:Chintamani
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:vitamin E
+
+Listening.........
+Recognising....
+User said:Dipawali Chintamani
+
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+recognition connection failed: [Errno 11002] getaddrinfo failed
+Say that again Please....
+Listening.........
+Recognising....
+User said:Ajal
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:TV
+
+Listening.........
+Recognising....
+User said:evolution
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:Zee TV
+
+Listening.........
+Recognising....
+User said:Zee TV live
+
+Listening.........
+Recognising....
+User said:bachi Devi
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:YouTube
+
+Listening.........
+Recognising....
+User said:bachi Devi
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:bacchi Devi
+
+Listening.........
+Recognising....
+User said:bachi bachi Devi
+
+Listening.........
+Recognising....
+User said:Sridevi
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Devi
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:Chintamani
+
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:the money
+
+Listening.........
+Recognising....
+User said:Chintamani
+
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:open database
+
+This is test
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 652, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:open Outlook
+
+Listening.........
+Recognising....
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 53, in takeCommand
+    query= r.recognize_google(audio, language='en-in')
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 840, in recognize_google
+    response = urlopen(request, timeout=self.operation_timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 222, in urlopen
+    return opener.open(url, data, timeout)
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 525, in open
+    response = self._open(req, data)
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 542, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 502, in _call_chain
+    result = func(*args)
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 1348, in http_open
+    return self.do_open(http.client.HTTPConnection, req)
+  File "C:\Program Files (x86)\Python38-32\lib\urllib\request.py", line 1323, in do_open
+    r = h.getresponse()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 1322, in getresponse
+    response.begin()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 303, in begin
+    version, status, reason = self._read_status()
+  File "C:\Program Files (x86)\Python38-32\lib\http\client.py", line 264, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+  File "C:\Program Files (x86)\Python38-32\lib\socket.py", line 669, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:open Skype
+
+Traceback (most recent call last):
+  File "project1.py", line 117, in <module>
+    os.startfile(dbpath)
+PermissionError: [WinError 5] Access is denied: 'C:\\Program Files\\WindowsApps\\Microsoft.SkypeApp_15.68.96.0_x86__kzf8qxf38zg5c\\Skype\\Skype.exe'
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:wish me
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 620, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:open Skype
+
+Traceback (most recent call last):
+  File "project1.py", line 117, in <module>
+    os.startfile(dbpath)
+PermissionError: [WinError 5] Access is denied: 'C:\\Program Files\\WindowsApps\\Microsoft.SkypeApp_15.68.96.0_x86__kzf8qxf38zg5c\\Skype\\Skype.exe'
+
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:open Outlook
+
+Listening.........
+Recognising....
+User said:bye bye service
+
+Listening.........
+Recognising....
+User said:bye bye service
+
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+Listening.........
+Recognising....
+User said:main bhi
+
+Listening.........
+Recognising....
+User said:bye bye Javed
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 620, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+Listening.........
+Recognising....
+User said:main Bajar
+
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+Listening.........
+Recognising....
+
+Say that again Please....
+Listening.........
+Recognising....
+User said:bye bye service
+
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 620, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+Listening.........
+Recognising....
+User said:main bhi service
+
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+Listening.........
+Traceback (most recent call last):
+  File "project1.py", line 80, in <module>
+    query = takeCommand().lower()
+  File "project1.py", line 49, in takeCommand
+    audio = r.listen(source)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 620, in listen
+    buffer = source.stream.read(source.CHUNK)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\speech_recognition\__init__.py", line 161, in read
+    return self.pyaudio_stream.read(size, exception_on_overflow=False)
+  File "C:\Program Files (x86)\Python38-32\lib\site-packages\pyaudio.py", line 608, in read
+    return pa.read_stream(self._stream, num_frames, exception_on_overflow)
+KeyboardInterrupt
+^C
+C:\Users\chanroy\Desktop\python\Project>python project1.py
+Listening.........
+Recognising....
+User said:bye bye service
+
+Listening.........
+Recognising....
+User said:bye bye Jarvis
+
+
+C:\Users\chanroy\Desktop\python\Project>
